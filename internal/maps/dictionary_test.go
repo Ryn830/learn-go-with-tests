@@ -49,9 +49,3 @@ func assertErrorsEqual(t *testing.T, actual, expected error) {
 		t.Errorf("Actual %q not equal %q", actual, expected)
 	}
 }
-
-func assertDefinition(t *testing.T, dictionary Dictionary, word, definition string) {
-	t.Helper()
-
-	actualdefinition, error := dictionary.Search(word)
-}
